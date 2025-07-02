@@ -1,8 +1,11 @@
 package com.example.aichatbot.service;
-import com.org.aianswer.model.AnswerBlock;
-import com.org.aianswer.model.ChatResponse;
+import com.example.aichatbot.model.AnswerBlock;
+import com.example.aichatbot.model.ChatResponse;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
+@Service
 public class OpenAIService {
     public ChatResponse getAnswer(String message) {
         return new ChatResponse(List.of(
