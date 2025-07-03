@@ -10,4 +10,8 @@ import java.util.List;
 @NoArgsConstructor
 public class ChatResponse {
     private List<AnswerBlock> content;
+
+    public List<AnswerBlock> getContent() {
+        return content;
+    }
 }
